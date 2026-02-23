@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #260101;
+    --fundo-doc: #F2F2F2;
+    --texto-doc: #010D00;
+    --texto-principal: #F2F2F2;
+    --texto-destaque: #594622;
+    --texto-discreto: #697363;
+}
