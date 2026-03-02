@@ -16,9 +16,13 @@
     --cor-ficha1: #e6e6e6;
     --cor-ficha2: #f9f9f9;
     --shu: #aeffae;
+    --shu2: #14ad14;
     --wu: #ffa77f;
+    --wu2: #e04719;
     --wei: #acacfc;
+    --wei2: #1818c4;
     --others: #ffffbe;
+    --others2: #b4b40a;
 }
 
 body {
@@ -123,17 +127,91 @@ footer {
 
 .oficiais-shu {
     text-align: center;
+    border-radius: 20px;
+    padding-top: 30px;
+}
 
+.oficiais-shu:hover {
+    background-color: var(--shu2);
+    color: var(--cor-ficha2);
+    font-weight: bold;
 }
 
 .oficiais-wu {
     text-align: center;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.oficiais-wu:hover {
+    background-color: var(--wu2);
+    color: var(--cor-ficha2);
+    font-weight: bold;
 }
 
 .oficiais-wei {
     text-align: center;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.oficiais-wei:hover {
+    background-color: var(--wei2);
+    color: var(--cor-ficha2);
+    font-weight: bold;
 }
 
 .oficiais-others {
     text-align: center;
+    border-radius: 20px;
+    padding-top: 30px;
 }
+
+.oficiais-others:hover {
+    background-color: var(--others2);
+    color: var(--cor-ficha2);
+    font-weight: bold;
+}
+
+.arma {
+    display: grid;
+    grid-template-areas:
+        "topo topo"
+        "imagem status"
+        "requisitos requisitos";
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.arma h1, h2 ,h3, p {
+    margin: 0%;
+}
+
+.exercito-personagem {
+    grid-area: topo;
+    font-size: 0.8em;
+    color: var(--shu2);
+}
+.imagem-arma { 
+    grid-area: imagem;
+    align-items: center;
+    align-content: center;
+}
+
+.arma-status-batalha {
+    grid-area: status;
+    font-size: 1em;   
+}
+
+.requisitos {
+    grid-area: requisitos;
+    font-size: 1em;
+    text-align: justify;
+}
+
+
