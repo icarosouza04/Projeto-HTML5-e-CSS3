@@ -48,12 +48,6 @@ main section {
 
 h1, h2, h3 {
     padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-p {
-    
-    margin-bottom: 20px;
 }
 
 ul {
@@ -119,6 +113,7 @@ footer {
 .others {
     background-color: var(--others);
 }
+
 .oficiais {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -173,7 +168,7 @@ footer {
     font-weight: bold;
 }
 
-.arma {
+.arma-shu {
     display: grid;
     grid-template-areas:
         "topo topo"
@@ -182,21 +177,122 @@ footer {
 
     grid-template-columns: 100px 1fr;
 
-    gap: 10px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--shu2);
     margin-bottom: 20px;
+
+    border-radius: 20px;
 }
 
-.arma h1, h2 ,h3, p {
-    margin: 0%;
+.arma-shu img {
+    border-radius: 5px;
+    background-color: var(--shu2);
+    padding: 2px;
+}
+
+.arma-shu h2 {
+    color: var(--shu2);
+}
+
+.arma-shu h3 {
+    color: var(--shu2);
+}
+
+.arma-wu {
+    display: grid;
+    grid-template-areas:
+        "topo topo"
+        "imagem status"
+        "requisitos requisitos";
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 20px;
+    border: 1px solid var(--wu2);
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+}
+
+.arma-wu img {
+    border-radius: 5px;
+    background-color: var(--wu2);
+    padding: 2px;
+}
+
+.arma-wu h2 {
+    color: var(--wu2);
+}
+
+.arma-wu h3 {
+    color: var(--wu2);
+}
+
+.arma-wei {
+    display: grid;
+    grid-template-areas:
+        "topo topo"
+        "imagem status"
+        "requisitos requisitos";
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 20px;
+    border: 1px solid var(--wei2);
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+}
+
+.arma-wei img {
+    border-radius: 5px;
+    background-color: var(--wei2);
+    padding: 2px;
+}
+
+.arma-wei h2 {
+    color: var(--wei2);
+}
+
+.arma-wei h3 {
+    color: var(--wei2);
+}
+
+.arma-others {
+    display: grid;
+    grid-template-areas:
+        "topo topo"
+        "imagem status"
+        "requisitos requisitos";
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 20px;
+    border: 1px solid var(--others2);
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+}
+
+.arma-others img {
+    border-radius: 5px;
+    background-color: var(--others2);
+    padding: 2px;
+}
+
+.arma-others h2 {
+    color: var(--others2);
+}
+
+.arma-others h3 {
+    color: var(--others2);
 }
 
 .exercito-personagem {
     grid-area: topo;
     font-size: 0.8em;
-    color: var(--shu2);
 }
+
 .imagem-arma { 
     grid-area: imagem;
     align-items: center;
@@ -205,7 +301,8 @@ footer {
 
 .arma-status-batalha {
     grid-area: status;
-    font-size: 1em;   
+    font-size: 1em;
+    margin-left: 30px;
 }
 
 .requisitos {
@@ -213,5 +310,3 @@ footer {
     font-size: 1em;
     text-align: justify;
 }
-
-
