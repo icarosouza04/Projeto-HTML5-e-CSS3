@@ -91,11 +91,20 @@ footer {
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .menu ul li a:hover {
     color: var(--cor-fundo);
     background-color: var(--cor-ficha2);
+}
+
+.inicio h1 {
+    padding-bottom: 15px;
+}
+
+.inicio p {
+    text-align: justify;
 }
 
 .shu {
@@ -114,6 +123,26 @@ footer {
     background-color: var(--others);
 }
 
+.shu h1 {
+    color: var(--shu2);
+    text-shadow: 1px 1px 0px var(--cor-texto);
+}
+
+.wu h1 {
+    color: var(--wu2);
+    text-shadow: 1px 1px 0px var(--cor-texto);
+}
+
+.wei h1 {
+    color: var(--wei2);
+    text-shadow: 1px 1px 0px var(--cor-texto);
+}
+
+.others h1 {
+    color: var(--others2);
+    text-shadow: 1px 1px 0px var(--cor-texto);
+}
+
 .oficiais {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -123,7 +152,8 @@ footer {
 .oficiais-shu {
     text-align: center;
     border-radius: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .oficiais-shu:hover {
@@ -135,7 +165,8 @@ footer {
 .oficiais-wu {
     text-align: center;
     border-radius: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .oficiais-wu:hover {
@@ -147,7 +178,8 @@ footer {
 .oficiais-wei {
     text-align: center;
     border-radius: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .oficiais-wei:hover {
@@ -159,7 +191,8 @@ footer {
 .oficiais-others {
     text-align: center;
     border-radius: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .oficiais-others:hover {
