@@ -15,6 +15,7 @@
     --cor-fundo: #697363;
     --cor-ficha1: #e6e6e6;
     --cor-ficha2: #f9f9f9;
+    --cor-link: #ffff00;
     --shu: #aeffae;
     --shu2: #14ad14;
     --wu: #ffa77f;
@@ -77,6 +78,15 @@ footer {
     padding: 10px;
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+}
+
+footer a:hover {
+    color: var(--cor-link);
+}
+
 .menu ul {
     list-style: none;
     padding: 0;
@@ -125,22 +135,18 @@ footer {
 
 .shu h1 {
     color: var(--shu2);
-    text-shadow: 1px 1px 0px var(--cor-texto);
 }
 
 .wu h1 {
     color: var(--wu2);
-    text-shadow: 1px 1px 0px var(--cor-texto);
 }
 
 .wei h1 {
     color: var(--wei2);
-    text-shadow: 1px 1px 0px var(--cor-texto);
 }
 
 .others h1 {
     color: var(--others2);
-    text-shadow: 1px 1px 0px var(--cor-texto);
 }
 
 .oficiais {
@@ -342,4 +348,19 @@ footer {
     grid-area: requisitos;
     font-size: 1em;
     text-align: justify;
+}
+
+.creditos {
+    background-color: var(--cor-texto);
+    color: var(--cor-ficha2);
+    text-align: center;
+}
+
+.creditos a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+}
+
+.creditos a:hover {
+    color: var(--cor-link);
 }

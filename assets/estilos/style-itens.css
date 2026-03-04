@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Sriracha&display=swap');
 
 * {
@@ -38,15 +39,8 @@ main section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-section {
-    font-size: 17px;
-    line-height: 1.7;
-    text-align: justify;
-}
-
 h1, h2, h3 {
     padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 ul {
@@ -99,6 +93,7 @@ footer a:hover {
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
+    transition: background-color 0.2s, color 0.3s;
 }
 
 .menu ul li a:hover {
@@ -106,64 +101,58 @@ footer a:hover {
     background-color: var(--cor-ficha2);
 }
 
-.ficha {
-    background-color: var(--cor-doc);
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
+.inicio h1 {
+    margin-bottom: 20px;
 }
 
-.ficha .capa {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 5px;
+.inicio p {
+    text-align: justify;
+    margin-bottom: 5px;
 }
 
-.info-grid {
+.nav-itens {
+    background-color: var(--cor-menu);
+    color: var(--cor-ficha2);
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 5px 5px;
-    text-align: left;
-    padding-top: 20px;
+    grid-area: "itens raros montarias orbes";
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
-.label {
-    font-weight: 600;
-    background-color: var(--cor-ficha1);
-    padding: 8px;
-    border-radius: 5px;
+.nav-itens a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
 }
 
-.valor {
-    padding: 8px;
-    background-color: var(--cor-ficha2);
-    border-radius: 5px;
+.nav-itens a:hover {
+    color: var(--cor-link);
 }
 
-.conteudo-principal p {
-    margin-bottom: 10px;
+.itens {
+    display: grid;
+    grid-template-areas:
+        "imagem status"
+        "requisitos requisitos";
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 20px 0;
 }
 
-.novos-personagens {
-    list-style: none;
-    padding: 0;
-}
-
-.novos-personagens li {
+.imagem {
+    grid-area: imagem;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 18px;
+    justify-content: center;
 }
 
-.novos-personagens img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
+.status {
+    grid-area: status;
+    margin-left: 20px;
+}
+
+.requisitos {
+    grid-area: requisitos;
 }
 
 .creditos {
