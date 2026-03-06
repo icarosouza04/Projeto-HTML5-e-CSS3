@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-menu: #260101;
+    --cor-doc: #F2F2F2;
+    --cor-texto: #1B1B1B;
+    --cor-fundo: #697363;
+    --cor-ficha1: #e6e6e6;
+    --cor-ficha2: #f9f9f9;
+    --cor-link: #ffff00;
+    --shu: #aeffae;
+    --shu2: #14ad14;
+    --shu3: #144d14;
+    --wu: #ffa77f;
+    --wu2: #e04719;
+    --wu3: #852a0f;
+    --wei: #acacfc;
+    --wei2: #1818c4;
+    --wei3: #111168;
+    --others: #ffffbe;
+    --others2: #b4b40a;
+    --others3: #5f5f18;
+    --destaque: #ff0000;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 2em;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+main section {
+    background-color: var(--cor-doc);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: var(--cor-menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 16px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--cor-menu);
+    color: var(--cor-doc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+}
+
+footer a:hover {
+    color: var(--cor-link);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-ficha2);
+}
+
+.art {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.titulo h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.biografia p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.creditos {
+    background-color: var(--cor-texto);
+    color: var(--cor-ficha2);
+    text-align: center;
+}
+
+.creditos a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+}
+
+.creditos a:hover {
+    color: var(--cor-link);
+}
