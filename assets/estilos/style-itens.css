@@ -23,12 +23,16 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     line-height: 2em;
+    margin: 0;
 }
 
 main {
     display: flex;
+    margin: 0 auto;
+    max-width: 800px;
     flex-direction: column;
     align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 main section {
@@ -36,7 +40,6 @@ main section {
     width: 100%;
     max-width: 800px;
     padding: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 h1, h2, h3 {

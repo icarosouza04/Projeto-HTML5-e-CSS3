@@ -18,12 +18,17 @@
     --cor-link: #ffff00;
     --shu: #aeffae;
     --shu2: #14ad14;
+    --shu3: #144d14;
     --wu: #ffa77f;
     --wu2: #e04719;
+    --wu3: #852a0f;
     --wei: #acacfc;
     --wei2: #1818c4;
+    --wei3: #111168;
     --others: #ffffbe;
     --others2: #b4b40a;
+    --others3: #5f5f18;
+    --destaque: #ff0000;
 }
 
 body {
@@ -48,10 +53,11 @@ main section {
     width: 100%;
     max-width: 800px;
     padding: 20px;
+    
 }
 
-h1, h2, h3 {
-    padding-top: 10px;
+h1, h2 {
+    margin-bottom: 20px;
 }
 
 ul {
@@ -90,6 +96,8 @@ footer a:hover {
     color: var(--cor-link);
 }
 
+  
+
 .menu ul {
     list-style: none;
     padding: 0;
@@ -112,56 +120,86 @@ footer a:hover {
     background-color: var(--cor-ficha2);
 }
 
-.inicio h1 {
-    padding-bottom: 15px;
-}
-
-.inicio p {
+.menu-pagina p {
     text-align: justify;
-}
-
-.shu {
-    background-color: var(--shu)
-}
-
-.wu {
-    background-color: var(--wu);
-}
-
-.wei {
-    background-color: var(--wei);
-}
-
-.others {
-    background-color: var(--others);
 }
 
 .shu h1 {
     color: var(--shu2);
+    margin: 15px 0;
+}
+
+.shu h2 {
+    color: var(--shu2);
+    margin: 15px 0;
+}
+
+.shu strong {
+    color: var(--shu3);
 }
 
 .wu h1 {
     color: var(--wu2);
+    margin: 15px 0;
+}
+
+.wu h2 {
+    color: var(--wu2);
+    margin: 15px 0;
+}
+
+.wu strong {
+    color: var(--wu3);
 }
 
 .wei h1 {
     color: var(--wei2);
+    margin: 15px 0;
+}
+
+.wei h2 {
+    color: var(--wei2);
+    margin: 15px 0;
+}
+
+.wei strong {
+    color: var(--wei3);
 }
 
 .others h1 {
     color: var(--others2);
+    margin: 15px 0;
 }
+
+.others h2 {
+    color: var(--others2);
+    margin: 15px 0;
+}
+
+.others strong {
+    color: var(--others3);
+}
+
+.oficiais img {
+    border-radius: 10px;
+}
+
+.oficiais strong {
+    text-decoration: none;
+    color: var(--destaque);
+    font-weight: bold;
+} 
 
 .oficiais {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
+    gap: 20px;
 }
 
 .oficiais-shu {
     text-align: center;
-    border-radius: 20px;
-    padding-top: 20px;
+    border-radius: 10px;
+    padding-top: 15px;
     transition: background-color 0.2s, color 0.3s;
 }
 
@@ -173,8 +211,8 @@ footer a:hover {
 
 .oficiais-wu {
     text-align: center;
-    border-radius: 20px;
-    padding-top: 20px;
+    border-radius: 10px;
+    padding-top: 15px;
     transition: background-color 0.2s, color 0.3s;
 }
 
@@ -186,8 +224,8 @@ footer a:hover {
 
 .oficiais-wei {
     text-align: center;
-    border-radius: 20px;
-    padding-top: 20px;
+    border-radius: 10px;
+    padding-top: 15px;
     transition: background-color 0.2s, color 0.3s;
 }
 
@@ -199,8 +237,8 @@ footer a:hover {
 
 .oficiais-others {
     text-align: center;
-    border-radius: 20px;
-    padding-top: 20px;
+    border-radius: 10px;
+    padding-top: 15px;
     transition: background-color 0.2s, color 0.3s;
 }
 
@@ -210,147 +248,64 @@ footer a:hover {
     font-weight: bold;
 }
 
-.arma-shu {
-    display: grid;
-    grid-template-areas:
-        "topo topo"
-        "imagem status"
-        "requisitos requisitos";
-
-    grid-template-columns: 100px 1fr;
-
-    padding: 20px;
-    border: 1px solid var(--shu2);
-    margin-bottom: 20px;
-
-    border-radius: 20px;
-}
-
-.arma-shu img {
-    border-radius: 5px;
-    background-color: var(--shu2);
-    padding: 2px;
-}
-
-.arma-shu h2 {
+.shu-batalhas h2 {
     color: var(--shu2);
+    margin-bottom: 10px;
 }
 
-.arma-shu h3 {
-    color: var(--shu2);
+.shu-batalhas p {
+    color: var(--shu3);
+    font-weight: bold;
 }
 
-.arma-wu {
-    display: grid;
-    grid-template-areas:
-        "topo topo"
-        "imagem status"
-        "requisitos requisitos";
-
-    grid-template-columns: 100px 1fr;
-
-    padding: 20px;
-    border: 1px solid var(--wu2);
-    margin-bottom: 20px;
-
-    border-radius: 20px;
+.shu-batalhas li {
+    font-size: 0.7em;
+    line-height: 0.5em;
 }
 
-.arma-wu img {
-    border-radius: 5px;
-    background-color: var(--wu2);
-    padding: 2px;
-}
-
-.arma-wu h2 {
+.wu-batalhas h2 {
     color: var(--wu2);
+    margin-bottom: 10px;
 }
 
-.arma-wu h3 {
-    color: var(--wu2);
+.wu-batalhas p {
+    color: var(--wu3);
+    font-weight: bold;
 }
 
-.arma-wei {
-    display: grid;
-    grid-template-areas:
-        "topo topo"
-        "imagem status"
-        "requisitos requisitos";
-
-    grid-template-columns: 100px 1fr;
-
-    padding: 20px;
-    border: 1px solid var(--wei2);
-    margin-bottom: 20px;
-
-    border-radius: 20px;
+.wu-batalhas li {
+    font-size: 0.7em;
+    line-height: 0.5em;
 }
 
-.arma-wei img {
-    border-radius: 5px;
-    background-color: var(--wei2);
-    padding: 2px;
-}
-
-.arma-wei h2 {
+.wei-batalhas h2 {
     color: var(--wei2);
+    margin-bottom: 10px;
 }
 
-.arma-wei h3 {
-    color: var(--wei2);
+.wei-batalhas p {
+    color: var(--wei3);
+    font-weight: bold;
 }
 
-.arma-others {
-    display: grid;
-    grid-template-areas:
-        "topo topo"
-        "imagem status"
-        "requisitos requisitos";
-
-    grid-template-columns: 100px 1fr;
-
-    padding: 20px;
-    border: 1px solid var(--others2);
-    margin-bottom: 20px;
-
-    border-radius: 20px;
+.wei-batalhas li {
+    font-size: 0.7em;
+    line-height: 0.5em;
 }
 
-.arma-others img {
-    border-radius: 5px;
-    background-color: var(--others2);
-    padding: 2px;
-}
-
-.arma-others h2 {
+.others-batalhas h2 {
     color: var(--others2);
+    margin-bottom: 10px;
 }
 
-.arma-others h3 {
-    color: var(--others2);
+.others-batalhas p {
+    color: var(--others3);
+    font-weight: bold;
 }
 
-.exercito-personagem {
-    grid-area: topo;
-    font-size: 0.8em;
-}
-
-.imagem-arma { 
-    grid-area: imagem;
-    align-items: center;
-    align-content: center;
-}
-
-.arma-status-batalha {
-    grid-area: status;
-    font-size: 1em;
-    margin-left: 30px;
-}
-
-.requisitos {
-    grid-area: requisitos;
-    font-size: 1em;
-    text-align: justify;
+.others-batalhas li {
+    font-size: 0.7em;
+    line-height: 0.5em;
 }
 
 .creditos {
