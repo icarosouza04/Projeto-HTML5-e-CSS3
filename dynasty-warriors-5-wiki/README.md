@@ -4,7 +4,7 @@ Desenvolvi uma página wiki simples dedicada ao jogo Dynasty Warriors 5, com o o
 
 O projeto reúne informações básicas sobre o jogo em um formato organizado de wiki, inspirado em páginas já existentes da comunidade. Além de servir como uma pequena base de consulta para fãs do jogo, o principal propósito deste projeto é educacional, focado na prática de estruturação de conteúdo e estilização de páginas web.
 
-[Dynasty Warriors 5 Wiki]()
+[Dynasty Warriors 5 Wiki](https://icarosouza04.github.io//Projeto-HTML5-e-CSS3/dynasty-warriors-5-wiki/index.html)
 
 Usei como referencias as wikis ja existentes deste jogo, sendo elas:
 
