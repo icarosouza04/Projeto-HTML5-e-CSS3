@@ -63,6 +63,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+h5 {
+    color: var(--cor-fundo);
+}
+
 ul {
     padding-left: 20px;
     margin: 16px 0;
@@ -119,6 +123,15 @@ footer a:hover {
 .menu ul li a:hover {
     color: var(--cor-fundo);
     background-color: var(--cor-ficha2);
+}
+
+.menu-pagina {
+    padding-bottom: 0px;
+}
+
+.menu-pagina nav a {
+    color: var(--destaque);
+    text-decoration: none;
 }
 
 .menu-pagina p {
