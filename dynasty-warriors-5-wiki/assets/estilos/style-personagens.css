@@ -125,10 +125,6 @@ footer a:hover {
     background-color: var(--cor-ficha2);
 }
 
-.menu-pagina {
-    padding-bottom: 0px;
-}
-
 .menu-pagina nav a {
     color: var(--destaque);
     text-decoration: none;
@@ -137,6 +133,20 @@ footer a:hover {
 
 .menu-pagina p {
     text-align: justify;
+}
+
+.menu-links {
+    background-color: var(--cor-menu);
+    color: var(--cor-ficha2);
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: var(--cor-ficha2);
+}
+
+.menu-links a:hover {
+    color: var(--cor-link);
 }
 
 .shu h1 {
